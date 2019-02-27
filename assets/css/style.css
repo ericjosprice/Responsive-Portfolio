@@ -1,0 +1,153 @@
+/* push footer to bottom of page */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .content {
+    min-height: 100%;
+  }
+  .content-inside {
+    padding: 0;
+    padding-bottom: 50px;
+  }
+/* end sticky footer */
+body{
+   background-image: url(../images/white-waves.png);
+   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+   color:#777777;
+}
+
+*h1,
+*h2,
+*h3,
+*h4,
+*h5 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+}
+
+nav {
+   background:#ffffff;
+   margin:0;
+   height: 46px;
+   border-bottom: 2px solid #cccccc;
+}
+nav div {
+    width:960px;
+    margin: 0 auto;
+}
+
+#wrapper{
+    width:375px;
+    float:left;
+    background: #4aaaa5;
+    color:#ffffff;
+}
+
+#wrapper h1,
+#wrapper h4 {
+    margin:0;
+}
+
+nav h3 {
+    float:right;
+    width:45px;
+    margin-top: 18px;
+    font-weight: normal;
+    font-size:12px;
+    border-right:1px solid rgb(204, 200, 200);
+    padding:0 5px;
+    text-align:center;
+}
+#noBorder{
+    border:none;
+    padding-right:0px;
+}
+
+#container{
+    margin:0 auto;
+    width:938px;
+    clear:both;
+    border:1px solid#dddddd;
+    background: #ffffff;
+    overflow:auto;
+    padding:10px;
+}
+section {
+    margin:10px;
+}
+
+h2 {
+    color:#4aaaa5;
+}
+/* to care of this with overflow:auto
+    container::after {
+    display:block;
+    content:"";
+    clear:both;
+} */
+
+
+#dexPic{
+    height: 200px;
+    width:128px;
+    float:left;
+    margin-right:10px;
+}
+
+
+footer{
+    border-top:8px solid #4aaaa5;
+    background: #666666;
+    text-align: center;
+    clear:both;
+    height: 50px;
+  margin-top: -50px;
+  color:rgb(34, 33, 33);
+}
+
+footer h5 {
+    margin-bottom: 0;
+}
+
+/* start css for contact page */
+
+input,
+textarea {
+    width:100%;
+}
+
+button {
+    width:60px;
+    height: 30px;
+}
+
+br:nth-of-type(even) {
+    margin: 10px;
+    display:block;
+    content:"";
+}
+
+
+/* portfolio css starts here */
+ .pics{
+    float:left;
+    margin:15px;
+}
+
+img~h3 {
+    background:#4aaaa5;
+    color:#ffffff;
+    text-align: center;
+    font-weight: normal;
+    margin-top:-50px;
+    position: absolute;
+    width:200px;
+    padding:5px 0;
+}
+
+#col{
+    width:500px;
+}
+
+
