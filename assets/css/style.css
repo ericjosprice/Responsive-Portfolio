@@ -29,19 +29,21 @@ body{
 nav {
    background:#ffffff;
    margin:0;
-   height: 46px;
+   height:auto;
    border-bottom: 2px solid #cccccc;
+   overflow:auto;
 }
 nav div {
-    width:960px;
     margin: 0 auto;
+    max-width: 960px;
+
 }
 
 #wrapper{
-    width:375px;
     float:left;
     background: #4aaaa5;
     color:#ffffff;
+    padding:5px;
 }
 
 #wrapper h1,
@@ -49,29 +51,28 @@ nav div {
     margin:0;
 }
 
-nav h3 {
+h3 {
     float:right;
-    width:45px;
-    margin-top: 18px;
     font-weight: normal;
     font-size:12px;
     border-right:1px solid rgb(204, 200, 200);
-    padding:0 5px;
     text-align:center;
+    margin:22px auto;
+    height:100%;
+    width:10%;
 }
-#noBorder{
-    border:none;
-    padding-right:0px;
+#noBorder {
+    border-right:none;
 }
 
 #container{
     margin:0 auto;
-    width:938px;
     clear:both;
     border:1px solid#dddddd;
     background: #ffffff;
     overflow:auto;
     padding:10px;
+    max-width: 940px;
 }
 section {
     margin:10px;
@@ -80,19 +81,12 @@ section {
 h2 {
     color:#4aaaa5;
 }
-/* to care of this with overflow:auto
-    container::after {
-    display:block;
-    content:"";
-    clear:both;
-} */
-
-
 #dexPic{
-    height: 200px;
-    width:128px;
     float:left;
     margin-right:10px;
+    margin-bottom: 10px;
+    height: auto;
+    width:30%;
 }
 
 
@@ -115,11 +109,13 @@ footer h5 {
 input,
 textarea {
     width:100%;
+    border:2px solid lightgray;
 }
 
 button {
     width:60px;
     height: 30px;
+    background:#4aaaa5;
 }
 
 br:nth-of-type(even) {
@@ -142,12 +138,105 @@ img~h3 {
     font-weight: normal;
     margin-top:-50px;
     position: absolute;
-    width:200px;
+    width:199px;
+    height:20px;
     padding:5px 0;
 }
 
 #col{
-    width:500px;
+    width:auto;
 }
 
+/* responsive  */
+/* Make the layout match the following screenshots:
 
+index.html: 980px, 768px, 640px
+
+portfolio.html: 980px, 768px, 640px
+
+contact.html: 980px, 768px, 640px
+
+Make the position of the header static (the default positioning) when the screen is 640px wide. The header design takes up a lot of room; you don't want it to stick to the top of a small screen and leave no room for the rest of your site. */
+
+@media screen and (max-width:980px){
+    nav{
+        overflow:auto;
+       }
+    #brand{
+        width:60%;
+        float:left;
+    }
+    #navButtons{
+        width:40%;
+        float:right;
+    }
+
+    h3 {
+        width:30%;
+        margin:22px auto;
+        height:100%;
+
+    }
+    h4{
+        padding-bottom:5px;
+    }
+    #dexPic {
+        width:35%;
+    }
+}
+@media screen and (max-width:768px){
+    nav{
+        overflow:auto;
+    }
+    #brand{
+        width:60%;
+        float:left;
+    }
+    #navButtons{
+        width:40%;
+        float:right;
+    }
+
+    h3 {
+        width:30%;
+        margin:22px auto;
+        height:100%;
+
+    }
+    h4{
+        padding-bottom:5px;
+    }
+    #dexPic {
+        width:35%;
+    }
+}
+@media screen and (max-width:640px){
+    #brand{
+        width:100%;
+    }
+    #navButtons{
+        width:100%;
+    }
+    h3 {
+        width:33%;
+        background:lightgray;
+        padding:14px 0 14px 0;
+        margin:0;
+    }
+    #wrapper {
+        width: 100%;
+    }
+    .maxWidthNav {
+        width:100%;
+        }
+
+    .content {
+        width:100%;
+    }
+    #dexPic {
+        width:100%;
+    }
+    .text{
+        width:100%;
+    }
+}
