@@ -43,7 +43,7 @@ nav div {
     float:left;
     background: #4aaaa5;
     color:#ffffff;
-    /* padding:5px; */
+    padding:24px 16px;
 }
 
 #wrapper h1,
@@ -271,6 +271,7 @@ Make the position of the header static (the default positioning) when the screen
     }
     #wrapper {
         width: 100%;
+        padding:16px 16px;
     }
     .maxWidthNav {
         width:100%;
