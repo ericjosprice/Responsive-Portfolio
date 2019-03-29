@@ -38,6 +38,9 @@ nav div {
     max-width: 960px;
 
 }
+a{
+    text-decoration: none;
+}
 
 #wrapper{
     float:left;
